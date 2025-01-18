@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Permanent+Marker&family=Rozha+One&display=swap');
+/* body{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+} */
+nav{
+    background-color: black;
+    height : 90px;
+    width: 100%;
+    font-family: 'Bungee Tint';
+
+}
+ul {
+    display: flex; 
+    list-style: none; 
+    align-items: center; 
+    gap: 10px; 
+}
+.main{
+
+        color: white;
+        font-size: 1.5rem;
+    
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+
+.button1{
+    background-color: blue;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: px;
+    position: absolute;
+    top: 200px;  /* Distance from the top */
+    left: 230px; /* Distance from the left */
+    
+}
+.button2{
+    background-color: red;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: px;
+    position: absolute;
+    top: 200px;  /* Distance from the top */
+    left: 460px; /* Distance from the left */
+    
+}
+.button3{
+    background-color: darkgray;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: px;
+    position: absolute;
+    top: 200px;  /* Distance from the top */
+    left: 675px; /* Distance from the left */
+}
