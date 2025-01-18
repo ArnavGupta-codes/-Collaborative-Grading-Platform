@@ -3,14 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "student.css">
     <title>Document</title>
 </head>
+<nav>
+    <ul>
+    <img src="./logo.jpg" alt="Logo" width="470" height="400">
+    <!-- <p class="main">Bridging the GAP</p> -->
+    </ul>
+</nav>
+
 <body>
-    <nav>
-        <ul>
-        <img src="./logo.jpg" alt="Logo" width="100" height="90">
-        <p class="main">Bridging the GAP</p>
-        </ul>
-    </nav>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="title">Login</h1>
+            <form id="login-form" class="login-form" onsubmit="handleLogin(event)">
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="switch">
+                    Don't have an account? <a href="#" onclick="switchToSignUp()">Sign Up</a>
+                </p>
+            </form>
+
+            <form id="signup-form" class="signup-form hidden" onsubmit="handleSignUp(event)">
+                <h1 class="title">Sign Up</h1>
+                <div class="input-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="switch">
+                    Already have an account? <a href="#" onclick="switchToLogin()">Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function switchToSignUp() {
+            document.querySelector('.login-form').classList.add('hidden');
+            document.querySelector('.signup-form').classList.remove('hidden');
+        }
+
+        function switchToLogin() {
+            document.querySelector('.signup-form').classList.add('hidden');
+            document.querySelector('.login-form').classList.remove('hidden');
+        }
+
+        function handleLogin(event) {
+            event.preventDefault(); 
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            alert(`Welcome back, ${email}!`);
+            window.location.href = 'profs-center.html';
+        }
+
+        function handleSignUp(event) {
+            event.preventDefault(); 
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+
+            alert(`Sign up successful! Welcome, ${email}!`);
+            window.location.href = 'profs-center.html';
+        }
+    </script>
 </body>
 </html>

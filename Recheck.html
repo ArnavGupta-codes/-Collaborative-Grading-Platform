@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recheck Request Form</title>
+    <link rel="stylesheet" href="Recheck.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Recheck Request Form</h1>
+        <form id="recheckForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" placeholder="Enter your name" required>
+            
+            <label for="studentID">Student ID:</label>
+            <input type="text" id="studentID" name="studentID" placeholder="Enter your student ID" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject name" required>
+            
+            <label for="reason">Reason for Recheck:</label>
+            <textarea id="reason" name="reason" placeholder="Explain your reason" rows="4" required></textarea>
+            
+            <button type="submit" onclick="console.log('You request has been submitted')">Submit Request</button>
+        </form>
+        <p id="successMessage" style="display: none;">Your recheck request has been submitted successfully!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
