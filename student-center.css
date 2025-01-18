@@ -7,19 +7,27 @@ nav{
     font-family: 'Bungee Tint';
     justify-content: space-between;
     align-items: center;
+    ul {
+        display: flex; 
+        list-style: none; 
+        align-items: center; 
+        gap: 10px; 
+    }
+}
+.main{
+    font-family: 'Bungee Tint';
+    font-size: 20px;
 
 }
+/* ul{
+    list-style: decimal-leading-zero; 
+} */
 .profile{right:60px;
     border-radius: 50%; /* Optional: rounds the profile image */
     width: 50px;
     height: 50px;
 }
-ul {
-    display: flex; 
-    list-style: none; 
-    align-items: center; 
-    gap: 10px; 
-}
+
 *{
     margin:0px;
     padding:0px;
@@ -32,6 +40,9 @@ navbar{
     height:40px;
     top: 90px; 
     align-items:center;
+    display: flex; 
+    list-style: none; 
+    gap: 10px; 
     .active {
         color: #fff;  
         display: inline-block;
@@ -64,11 +75,11 @@ navbar{
     color: #0056b3;
 }
 .profile {
-    margin-left: auto; /* Pushes the profile image to the far right */
+    margin-left: auto;
     position: relative;
 }
 
-.card {
+/* .card {
     position: absolute;
     display: none;
     background: white;
@@ -86,4 +97,4 @@ navbar{
 .card.show {
     display: block;
     opacity: 1;
-}
+} */

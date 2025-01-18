@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Permanent+Marker&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Fugaz+One&family=Permanent+Marker&family=Rozha+One&display=swap');
 
 nav{
     background-color: black;
@@ -24,5 +24,9 @@ ul {
 *{
     margin:0px;
     padding:0px;
+}
+
+.main{
+    font-family:Fugaz One;
 }
 

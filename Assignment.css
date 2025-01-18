@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Permanent+Marker&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Fugaz+One&family=Permanent+Marker&family=Rozha+One&display=swap');
 
 nav{
     background-color: black;
@@ -9,6 +9,8 @@ nav{
     align-items: center;
 
 }
+table { width:fit-content; } table, th, td { align-items:center; border: 2px solid black; border-collapse: collapse; } th { text-align: left; } th, td { padding: 10px; }
+
 .profile{right:60px;
     border-radius: 50%; /* Optional: rounds the profile image */
     width: 50px;
