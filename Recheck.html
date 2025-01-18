@@ -26,6 +26,26 @@
         </form>
         <p id="successMessage" style="display: none;">Your recheck request has been submitted successfully!</p>
     </div>
-    <script src="script.js"></script>
+    <script> document.getElementById('infoForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Get form data
+        const name = document.getElementById('name').value.trim();
+        const age = document.getElementById('age').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+
+        // Retrieve existing data from localStorage
+        let data = JSON.parse(localStorage.getItem('tableData')) || [];
+
+        // Add new data
+        data.push({ name, age, subject });
+
+        // Save updated data back to localStorage
+        localStorage.setItem('tableData', JSON.stringify(data));
+
+        // Redirect to the display page
+        window.location.href = 'recheck-prof.html';
+    });
+    </script>
 </body>
 </html>

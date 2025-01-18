@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Permanent+Marker&family=Rozha+One&display=swap');
+
+nav{
+    background-color: black;
+    height : 90px;
+    width: 100%;
+    font-family: 'Bungee Tint';
+    justify-content: space-between;
+    align-items: center;
+
+}
+.profile{right:60px;
+    border-radius: 50%; /* Optional: rounds the profile image */
+    width: 50px;
+    height: 50px;
+}
+ul {
+    display: flex; 
+    list-style: none; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+

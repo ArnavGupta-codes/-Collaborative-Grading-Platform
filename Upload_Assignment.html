@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "Assignment.css">
-    <title>Document</title>
+    <link rel = "stylesheet" href = "Upload_Assignment.css">
+    <title>Upload_Assignment</title>
 </head>
 <body>
     <nav>
@@ -27,8 +27,34 @@
         </select>
         <br><br>
         <input type="submit" value="Submit">
-        <br><br>
-        <hr><br>
+        <hr>
+        <br>
+        <p style="font-size:15px;
+        background-color:black;
+        width:100%;
+        color:white;">Upload Assignment</p>
+        <h1>Select a File from Your Computer</h1>
+    
+        <input type="file" id="fileInput" onchange="displayFileName()">
+        <input type="text" id="name" placeholder="Submission Date">
+        <p id="fileName">No file selected.</p>
+        <br>
+        <button onclick="console.log('Uploaded Successfully')">Upload</button>
+    
+        <script>
+            function displayFileName() {
+                const fileInput = document.getElementById('fileInput');
+                const fileName = fileInput.files[0] ? fileInput.files[0].name : "No file selected.";
+                document.getElementById('fileName').textContent = "Selected file: " + fileName;
+            }
+        </script>
+        <br>
+        <hr>
+
+    <p style="font-size:15px;
+    background-color:black;
+    width:100%;
+    color:white;">Previous Assignment</p>
     <table border="">
         <tr>
         <th>Assignment No.</th>

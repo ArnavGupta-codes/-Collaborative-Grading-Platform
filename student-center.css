@@ -63,6 +63,10 @@ navbar{
 .subject-link:hover {
     color: #0056b3;
 }
+.profile {
+    margin-left: auto; /* Pushes the profile image to the far right */
+    position: relative;
+}
 
 .card {
     position: absolute;

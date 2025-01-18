@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Submitted Information</h1>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Retrieve data from localStorage
+        const data = JSON.parse(localStorage.getItem('tableData')) || [];
+
+        // Reference the table body
+        const tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+
+        // Populate the table with the data
+        data.forEach(item => {
+            const row = tableBody.insertRow();
+
+            const nameCell = row.insertCell(0);
+            const idCell = row.insertCell(1);
+            const subjectCell = row.insertCell(2);
+
+            nameCell.textContent = item.name;
+            idCell.textContent = item.Id_no;
+            subjectCell.textContent = item.subject;
+
+        });
+    </script>
+</body>
+</html>
