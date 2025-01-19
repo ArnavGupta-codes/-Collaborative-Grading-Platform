@@ -27,15 +27,19 @@
         </select>
         <br><br>
         <input type="submit" value="Submit">
+        <br><br>
         <hr>
         <br>
         <p style="font-size:15px;
-        background-color:black;
+        background-color:darkblue;
         width:100%;
         color:white;" class = "main">Upload Assignment</p>
-        <h3 class ="main">Select a File from Your Computer</h3>
-    
+        <img src="upload.gif" style="width:50px; height:50px;">
+
+        <br>
+        
         <input type="file" id="fileInput" onchange="displayFileName()">
+        
         <input type="text" id="name" placeholder="Submission Date">
         <p id="fileName">No file selected.</p>
         <br>
@@ -44,17 +48,19 @@
         <script>
             function displayFileName() {
                 const fileInput = document.getElementById('fileInput');
+            
                 const fileName = fileInput.files[0] ? fileInput.files[0].name : "No file selected.";
                 document.getElementById('fileName').textContent = "Selected file: " + fileName;
             }
         </script>
-        <br>
-        <hr>
+        <br><br>
+        <hr "weight:bold"><br>
 
     <p style="font-size:15px;
-    background-color:black;
+    background-color:darkblue;
     width:100%;
     color:white;" class = "main">Previous Assignment</p>
+    <br>
     <table border="">
         <tr>
         <th>Assignment No.</th>
