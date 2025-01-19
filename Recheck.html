@@ -34,16 +34,16 @@
         const age = document.getElementById('age').value.trim();
         const subject = document.getElementById('subject').value.trim();
 
-        // Retrieve existing data from localStorage
+        
         let data = JSON.parse(localStorage.getItem('tableData')) || [];
 
-        // Add new data
+        
         data.push({ name, age, subject });
 
-        // Save updated data back to localStorage
+        
         localStorage.setItem('tableData', JSON.stringify(data));
 
-        // Redirect to the display page
+        
         window.location.href = 'recheck-prof.html';
     });
     </script>

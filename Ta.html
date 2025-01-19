@@ -49,7 +49,7 @@
     </div>
 
     <script>
-        // Toggle between Login and Sign Up forms
+        
         function switchToSignUp() {
             document.querySelector('.login-form').classList.add('hidden');
             document.querySelector('.signup-form').classList.remove('hidden');
@@ -60,28 +60,24 @@
             document.querySelector('.login-form').classList.remove('hidden');
         }
 
-        // Handle Login Form Submission
+        
         function handleLogin(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 
-            // Perform your login logic here (e.g., authentication API call)
-
-            // Redirect to student-center page on successful login
             alert(`Welcome back, ${email}!`);
             window.location.href = 'tas-center.html';
         }
 
         // Handle Sign Up Form Submission
         function handleSignUp(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
             const email = document.getElementById('signup-email').value;
             const password = document.getElementById('signup-password').value;
 
-            // Perform your signup logic here (e.g., save to database)
+           
 
-            // Redirect to welcome page on successful signup
             alert(`Sign up successful! Welcome, ${email}!`);
             window.location.href = 'tas-center.html';
         }

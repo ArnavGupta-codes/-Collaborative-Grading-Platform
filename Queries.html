@@ -105,19 +105,19 @@
 
   <script>
     document.getElementById('queryForm').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent default form submission
+      event.preventDefault(); 
 
-      // Get form data
+      
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const subject = document.getElementById('subject').value;
       const query = document.getElementById('query').value;
 
-      // Display confirmation message
+      
       const responseMessage = document.getElementById('responseMessage');
       responseMessage.textContent = `Thank you, ${name}. Your query about "${subject}" has been submitted. We'll contact you at ${email} soon.`;
 
-      // Optionally clear the form
+      
       event.target.reset();
     });
   </script>

@@ -35,18 +35,18 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Rows will be dynamically added here -->
+            
         </tbody>
     </table>
 
     <script>
-        // Retrieve data from localStorage
+        
         const data = JSON.parse(localStorage.getItem('tableData')) || [];
 
-        // Reference the table body
+        
         const tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
 
-        // Populate the table with the data
+        
         data.forEach(item => {
             const row = tableBody.insertRow();
 
