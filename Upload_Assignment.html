@@ -4,6 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "Upload_Assignment.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0px;
+          background-color: #f9f9f9;
+        }
+    
+        .dropdown-container {
+        top:20px;
+        left:20px;
+          max-width: 300px;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        label {
+          font-weight: bold;
+          margin-bottom: 8px;
+          display: block;
+          color: #333;
+        }
+    
+        select {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color: #fff;
+          appearance: none; 
+        }
+    
+        .submit-btn {
+          margin-top: 20px;
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: darkblue;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+    
+        .submit-btn:hover {
+          background-color:blue;
+        }
+        
+        .response {
+          margin-top: 0px;
+          font-size: 10px;
+          color: green;
+        }
+        
+      </style>
     <title>Upload_Assignment</title>
 </head>
 <body>
@@ -18,15 +73,20 @@
     <p class = "main" style="font-size:30px;">Assignments</p>
     <hr>
     <br>
-        <label for="Subjects">Choose a Subject:</label>
-        <select name="Subjects" id="Subjects">
-          <option value="Com Sci">Comp Sci</option>
-          <option value="Physics">Phy</option>
-          <option value="Chemistry">Chem</option>
-          <option value="Maths">Maths</option>
+    <div class="dropdown-container">
+        <label for="subjects">Select a Subject:</label>
+        <select id="subjects" name="subjects">
+          <option value="">-- Choose a Subject --</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="Science">Science</option>
+          <option value="History">History</option>
+          <option value="Geography">Geography</option>
+          <option value="English">English</option>
         </select>
+        <button class="submit-btn" onclick="submitSubject()">Submit</button>
         <br><br>
-        <input type="submit" value="Submit">
+        <div id="responseMessage" class="response"></div>
+      </div>
         <br><br>
         <hr>
         <br>
@@ -69,10 +129,22 @@
         </tr>
         <tr>
             <th>1</th>
-            <th><a href="./Tut 1 maths F111.pdf">AI</a> </th>
+            <th><a href="./Tut 1 maths F111.pdf">Maths</a> </th>
             <th>15/3/2025</th>
         </tr>
         
     </table>
+    <script>
+        function submitSubject() {
+      const subject = document.getElementById('subjects').value;
+      const responseMessage = document.getElementById('responseMessage');
+
+      if (subject) {
+        responseMessage.textContent = `You have selected: ${subject}`;
+      } else {
+        responseMessage.textContent = 'Please select a subject.';
+      }
+        }
+    </script>
 </body>
 </html>
