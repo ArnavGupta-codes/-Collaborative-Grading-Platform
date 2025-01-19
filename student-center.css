@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Permanent+Marker&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Fugaz+One&family=Permanent+Marker&family=Rozha+One&display=swap');
 
 nav{
     background-color: black;
@@ -100,3 +100,20 @@ table { width:fit-content; width: 100% } table, th, td { align-items:center; bor
     display: block;
     opacity: 1;
 } */
+
+.main{
+
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.New{
+font-family:'Fugaz One';
+}
+
+*{
+margin:0px;
+padding: 0px;
+}
+

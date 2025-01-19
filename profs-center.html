@@ -21,9 +21,26 @@
         <a href="/Check for Recheck.html" class="active">Recheck</a>
         <a href="/Upload_Assignment.html" class="active">Upload Assignment</a>
         <br>
-        <a href="Announcements.html" class="active">Announcement</a>
         </ul>
     </navbar>
-    
+    <br>
+    <div>
+        <label class ="New" for="Subjects">Choose a Subject:</label>
+        <select name="Subjects" id="Subjects">
+          <option value="Com Sci">Comp Sci</option>
+          <option value="Physics">Phy</option>
+          <option value="Chemistry">Chem</option>
+          <option value="Maths">Maths</option>
+        </select>
+        <br>
+        <button>Select</button>
+        <br><br>
+        <hr><br>
+        <p class ="New">Make a Announcement:</p>
+        <!-- <input type="text" id="name" placeholder="Submission Date"> -->
+        <textarea id="reason" name="reason" placeholder="Explain your reason" rows="10" required style="width:70%;"></textarea>
+        <br>
+        <button>Submit</button>
+    </div>
 </body>
 </html>
