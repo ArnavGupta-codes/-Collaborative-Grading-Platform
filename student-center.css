@@ -78,6 +78,8 @@ navbar{
     margin-left: auto;
     position: relative;
 }
+table { width:fit-content; width: 100% } table, th, td { align-items:center; border: 2px solid black; border-collapse: collapse; } th { text-align: left; } th, td { padding: 10px; }
+
 
 /* .card {
     position: absolute;
