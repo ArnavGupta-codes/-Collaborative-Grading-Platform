@@ -27,3 +27,8 @@ ul {
     margin:0px;
     padding:0px;
 }
+
+.profile {
+    margin-left: auto;
+    position: relative;
+}

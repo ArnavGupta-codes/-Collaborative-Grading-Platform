@@ -19,9 +19,9 @@ nav{
     font-size: 20px;
 
 }
-/* ul{
-    list-style: decimal-leading-zero; 
-} */
+ul.b{
+    list-style-type: square;
+}
 .profile{right:60px;
     border-radius: 50%; /* Optional: rounds the profile image */
     width: 50px;
